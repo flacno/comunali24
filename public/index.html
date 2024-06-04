@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccolta Preferenze Elezioni Comunali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Raccolta Preferenze Elezioni Comunali</h1>
+    <form id="preference-form">
+        <label for="lista">Nome della lista:</label>
+        <select id="lista" name="lista" required>
+            <option value="San Gavino Monreale - Città Futura">San Gavino Monreale - Città Futura</option>
+            <option value="Civico 24-29">Civico 24-29</option>
+            <option value="San Gavino al Centro">San Gavino al Centro</option>
+        </select>
+        <label for="candidato">Nome del candidato:</label>
+        <select id="candidato" name="candidato" required></select>
+        <label for="preferenze">Numero di preferenze:</label>
+        <input type="number" id="preferenze" name="preferenze" required>
+        <button type="submit">Aggiungi Preferenze</button>
+    </form>
+    <button id="reset-button">Reset Preferenze</button>
+    <div id="results">
+        <h2>Totali per Lista</h2>
+        <ul id="lista-totals"></ul>
+        <h2>Preferenze per Candidato</h2>
+        <ul id="candidato-totals"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
