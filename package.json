@@ -1,0 +1,16 @@
+{
+  "name": "raccolta-preferenze",
+  "version": "1.0.0",
+  "description": "Raccolta Preferenze Elezioni Comunali",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
